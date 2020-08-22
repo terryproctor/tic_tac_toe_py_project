@@ -98,8 +98,15 @@ def VictoryFor(board, sign):
             victory = True
     return victor
         
+def check_game_over(free, victor):
+    if (free == []) or (victor == ('X' or 'O')):
+        print ('game_over')
 
-
+def check_tie(free, victor):
+    tie = False
+    if (victor == None) and (free == []):
+        tie = True
+        return tie
 
 
 # #
